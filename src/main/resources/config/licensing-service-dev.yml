@@ -1,0 +1,7 @@
+example:
+  property: I AM DEV
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
