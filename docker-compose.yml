@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  configservice:
+    image: configserver:0.0.1-SNAPSHOT
+    ports:
+      - "8071:8071"
+    networks:
+      backend:
+        aliases:
+          - "configservice"
+
+networks:
+  backend:
+    driver: bridge
