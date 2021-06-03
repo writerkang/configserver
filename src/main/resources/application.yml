@@ -7,7 +7,18 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/config
-
+          search-locations: '{cipher}d472775c681a88bf0a8a23a795c740d96a05367e883a4bc1266dcc470cbbc20641cf7a56505e82fca60d455583851f71'
+#          search-locations: classpath:/config
+        git:
+          uri: '{cipher}aaa66fa20ae96178f219b215baf9089378c4d1604a632f2a9406e3dc90b9979534356f73b55b36d219be421e814c5377d9a076c31d4d80c52bfe125c6103b0d8'
+#          uri: https://github.com/writerkang/config.git
+          search-paths: licensingservice
+        vault:
+          port: 8200
+          host: 172.23.0.52
+          kv-version: 2
 server:
   port: 8071
+
+encrypt:
+  key: secretkey
